@@ -9,7 +9,7 @@ try:
 except FileNotFoundError:
     loader.context.log("Session file does not exist yet - Logging in.")
 if not loader.context.is_logged_in:
-    loader.login('mehrshadina', 'newlifebegin')
+    loader.login('mehrshadina', THEFUCKINGPASSWORD)
     loader.save_session_to_file()
 
 
